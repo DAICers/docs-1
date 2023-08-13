@@ -6,11 +6,13 @@ slug: "monitor"
 The rollapp exposes an HTTP metric server on port 2112, with the `rollapp_height` and `rollapp_hub_height` metrics.
 The metric server is enabled by default when using `roller`
 
-### Setup Prometheus and Grafana
+## Setup Prometheus and Grafana
 
 Before setting them up, we need to ensure that Docker and Docker Compose are installed on your system.
 
-### Docker Installation
+## Docker and Docker Compose Installation
+
+#### Docker
 
 To check if Docker is installed, type the following command:
 
@@ -21,13 +23,13 @@ docker --version
 If Docker is installed, it will display the version details. If Docker is not installed, use these commands to install it:
 
 ```bash
-sudo apt-get update -y
+sudo apt-get update
 sudo apt-get install docker.io
 sudo systemctl start docker
 sudo systemctl enable docker
 ```
 
-### Docker Compose Installation
+#### Docker Compose
 
 To check if Docker Compose is installed, type the following command:
 
@@ -114,55 +116,44 @@ We map Prometheus's port to 9092 on the host machine (9092:9090). This is becaus
 You're all set. To start the monitoring services, run:
 
 ```bash
-sudo docker-compose up -d
+docker-compose up -d
 ```
 
-To verify that the services are running, run:
-
-```bash
-sudo docker-compose ps
-```
-
-### Adding Prometheus as a Grafana Data Source
+## Adding Prometheus as a Data Source in Grafana
 
 After setting up Prometheus and Grafana, the next step is to add Prometheus as a data source in Grafana. Follow the steps below:
 
-1. Access Grafana's web interface by navigating to `http://<Your_IP>:3000` in your web browser. Make sure the port is exposed in your firewall.
+1. Access Grafana's web interface by navigating to `http://<Your_IP>:3000` in your web browser.
 
 2. Log in using the default credentials (`admin` for both username and password). You'll be prompted to change the password on first login.
 
-3. Click on the big `Add your first data source` button in the middle of the screen.
+3. Click on the big "Add your first data source" button in the middle of the screen.
 
-4. In the `Filter by name or type` field, type `Prometheus` and select it from the dropdown menu.
+4. In the "Filter by name or type" field, type "Prometheus" and select it from the dropdown menu.
 
-5. In the `URL` field, enter `http://prometheus:9090` as the Prometheus is running within the same Docker network as Grafana and is accessible via the service name as defined in the `docker-compose.yml` file.
+5. In the "URL" field, enter `http://prometheus:9090` as the Prometheus is running within the same Docker network as Grafana and is accessible via the service name as defined in the `docker-compose.yml` file.
 
-6. Click the `Save & Test` button.
+6. Click on the "Save & Test" button.
 
-### Incorporating a Dashboard to Monitor RollApp
+## Incorporating a Dashboard to Monitor RollApp
+1. Initiate by clicking the prominent 'Create your first dashboard' button positioned at the center of the Grafana home screen.
 
-1. Initiate by clicking the prominent `Create your first dashboard` button positioned at the center of the Grafana home screen.
+2. Proceed by clicking the 'Add Visualization' button.
 
-2. Proceed by clicking the `Add Visualization` button.
+3. From the assortment of data sources, choose 'Prometheus'.
 
-3. From the assortment of data sources, choose `Prometheus`.
+4. In the 'Query' segment located at the screen's lower section, pick the rollapp_height metric from the dropdown menu.
 
-4. In the `Query` segment located at the screen's lower section, pick the `rollapp_height` metric from the dropdown menu.
+5. To introduce an additional query, click the '+ Query' button and select the rollapp_hub_height metric from the dropdown menu.
 
-5. To introduce an additional query, click the `+ Query` button and select the `rollapp_hub_height` metric from the dropdown menu.
+6. Execute the queries by clicking the 'Run Queries' button and view the results.
 
-6. Execute the queries by clicking the `Run Queries` button and view the results. Assuming the rollapp is running as expected you should see the height of the rollapp and the height of the hub.
-
-7. To retain the dashboard configuration, click the `Save` button located at the screen's top right corner.
+7. To retain the dashboard configuration, click the 'Save' button located at the screen's top right corner.
 
 ## Congratulations! 🎉
 
 You've successfully set up Prometheus and Grafana with your rollapp for production-level monitoring! You're now well-equipped to keep an eye on the critical metrics of your RollApp.
 
 Remember, monitoring is a continuous process, and these tools are here to assist you in maintaining the best possible performance for your RollApp. Happy monitoring!
-
-:::info NOTE:
-Setting up alerts is out of the scope of this guide, but you can find more information on how to do so [here](https://prometheus.io/docs/alerting/latest/overview/).
-:::
 
 In the next section, we'll learn how to list your RollApp on the [Dymension Portal](https://portal.dymension.xyz).
