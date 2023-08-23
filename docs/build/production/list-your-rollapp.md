@@ -24,6 +24,6 @@ Once you have the json files:
 1. Clone the [Dymension's Networks repo](https://github.com/dymensionxyz/networks/).
 2. Append the content from the `network.json` file you downloaded to `testnet/networks.json`.
 3. Append the content from the `tokens.json` file you downloaded to `testnet/tokens.json`.
-4. (Optional) Add a logo for your RollApp to the `logos` directory. The logo should be a 256x256 png, named <your-rollapp-id>.png.
+4. (Optional) Add a logo for your RollApp to the `logos` directory. The logo should be a 256x256 png, named <your-rollapp-id\>.png.
 
 After submitting the PR, the Dymension team will review it. If everything checks out, your RollApp will be showcased on the [portal](https://portal.dymension.xyz).
