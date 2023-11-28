@@ -41,7 +41,7 @@ Please follow the instructions for listing a RollApp:
     $balance dym1g8sf7w4cz5gtupa6y62h3q6a4gjv37pgefnpt5 <RollApp-ID>
     ```
 
-3. Fork the RollApp-registry [repo](https://github.com/dymensionxyz/rollapp-registry) into your GitHub account:
+3. Fork the RollApp-registry [repo](https://github.com/dymensionxyz/rollapp-registry/tree/main/devnet) into your GitHub account:
 
 <img class="image--primary" loading="eager" src={require('@site/static/img/fork.png').default} alt="background" />
 
