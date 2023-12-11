@@ -22,4 +22,4 @@ In the `expected_keepers` file we will define an interface for the `bank` and `e
 -   Bank:
 -   Epochs:
 
-We will later on refer to these external keepers in `app.go` during the instantiation of module keepers. Let's move on and build the state-transition functinoality of the `payment` module.
+We will later on refer to these external keepers in `app.go` during the instantiation of module keepers. Let's move on and build the state-transition functionality of the `payment` module.
