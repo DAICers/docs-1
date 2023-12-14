@@ -57,8 +57,8 @@ If the private Dymension Hub network is set up correctly, your Dymd node will be
 
 -   Chain-id: froopyland_100-1
 -   Binaries: https://github.com/dymensionxyz/dymension.git
--   Version: v1.0.2-beta
--   Git commit: 74457e007dc802bd9c0be979baa5d83ab4d3226e
+-   Version: v2.0.0-alpha.3
+-   Git commit: 7a74c08a5667fd783a2cece352066363c5bb347e
 -   Genesis: [Link here](https://github.com/dymensionxyz/testnets/blob/main/dymension-hub/froopyland/genesis.json)
 -   Seed nodes: [Link here](https://github.com/dymensionxyz/testnets/blob/main/dymension-hub/froopyland/seeds.txt)
 
