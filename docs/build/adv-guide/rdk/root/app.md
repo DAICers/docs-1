@@ -95,7 +95,7 @@ We'll add it at the end of the `endBlockersList`:
 endBlockersList := []string{
         // ...
 		hellotypes.ModuleName,
-	)
+	}
 ```
 
 The following adds the `hello` module to order of the `InitGenesis` called at the initialization of the application.
