@@ -5,7 +5,7 @@ slug: "dymension-litepaper-index"
 
 ## Home of the RollApps
 
-Present day blockchains operate as shared bandwidth systems which impede the growth of decentralized applications. Dymension disaggregates resource consumption by introducing a multi-layer blockchain protocol with robust tooling for building and deploying permission-less application-specific rollups. Dymension is akin to a hub and factory for such applications, which are referred to as RollApps. In this document we examine the technological, economic and social aspects of the Dymension protocol. Furthermore, we present the grand vision for dymension, the modular architecture of its design and a high level overview of Dymension’s prominent core concepts.
+Present day blockchains operate as shared bandwidth systems which impede the growth of decentralized applications. Dymension disaggregates resource consumption by introducing a multi-layer blockchain protocol with robust tooling for building and deploying permission-less application-specific rollups. Dymension is akin to a hub and factory for such applications, which are referred to as RollApps. In this document we examine the technological, economic and social aspects of the Dymension protocol. Furthermore, we present the grand vision for Dymension, the modular architecture of its design and a high level overview of Dymension’s prominent core concepts.
 
 ### RollApp Development Kit (RDK)
 
@@ -21,7 +21,7 @@ RollApps natively interact with the Inter-Blockchain Communication (IBC) protoco
 
 ### RollApp Virtual Machine (RVM)
 
-Dymension introduces a novel dispute- resolution mechanism which simulates a RollApp execution environment within the Dymension Hub. The Dymension Hub spins up an RVM instance which is being fed with the exact context of a given transaction, resulting in a deterministic output. As such, Dymension is capable of supporting various execution environments.
+Dymension introduces a novel dispute-resolution mechanism which simulates a RollApp execution environment within the Dymension Hub. The Dymension Hub spins up an RVM instance which is being fed with the exact context of a given transaction, resulting in a deterministic output. As such, Dymension is capable of supporting various execution environments.
 
 ### Embedded Hub AMM
 
@@ -29,4 +29,4 @@ Dymension embeds a native Automated Market Maker (AMM) into the Dymension Hub to
 
 ### Full PDF
 
-Click [here for the full PDF of the Dymension litepaper](https://litepaper.dymension.xyz/).
+Click [here](https://litepaper.dymension.xyz/) for the full PDF of the Dymension litepaper.
