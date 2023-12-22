@@ -45,7 +45,7 @@ slug: "glossary"
 <details>
     <summary>Dispute Period</summary>
     Anytime the sequencer publishes a batch of state transitions there is a “dispute period” during which any party can publish a “fraud proof” which indicates that one of the state transitions was invalid. This is proven by replaying the transaction which caused the state transition onchain and comparing the resulting state root with the one that was published by the sequencer. If the state roots do not match, then the fraud proof is successful and the state transition is cancelled. If there were more state transitions after the invalid one, they also get cancelled. Transactions which are older than the dispute period cannot be disputed anymore and are considered final.
-    <br /> <br /> Reference: https://research.paradigm.xyz/rollups
+    <br /> <br /> Reference: https://www.paradigm.xyz/2021/01/almost-everything-you-need-to-know-about-optimistic-rollup
 
 </details>
 
